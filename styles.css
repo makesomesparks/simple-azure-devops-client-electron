@@ -1,0 +1,129 @@
+/* styles.css */
+/* Add styles here to customize the appearance of your app */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html, body { margin: 0; height: 100%; overflow: hidden;}
+#body{width:100%;height: 100%;background-color: #201f1e;}
+#titlebar
+{
+	position: fixed;
+	left: 0;
+	top:0;
+	padding-left: 12px;
+	height: 31px;
+	color:#FFF;
+	-webkit-app-region: drag;
+	font-weight: bold;
+	font-size: 11px; 
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	-ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;
+}
+#titlebar-icon{width:12px;height:12px;margin-right:15px;}
+#titlebar-buttons-frame
+{
+	position:fixed;
+	right:0;
+	top:2px;
+	z-index: 1;
+	display: flex;
+}
+.titlebar-buttons{width: 46px;height: 29px;}
+.titlebar-buttons.close { background-image: url("./images/close.png") }
+.titlebar-buttons.minimum { background-image: url("./images/minimum.png") }
+.titlebar-buttons.maximum { background-image: url("./images/maximum.png") }
+.titlebar-buttons.signout { background-image: url("./images/signout.png") }
+
+.titlebar-buttons:hover
+{
+	background-color: rgba(255,255,255,0.25);
+}
+
+#frame
+{
+	height: 100%;
+	left:0;
+	top:0;
+	width: 100%;
+	position:fixed;
+	padding-top: 31px;
+	z-index: 0;
+}
+#frame-inner
+{
+	width: 100%;
+	height: 100%;
+}
+
+#frame-left{
+	position: fixed;
+	left:0;
+	top:0;
+	width:1px;
+	height:100%;
+	background-color: #252423;
+	z-index: 2;
+}
+#frame-right
+{
+	position: fixed;
+	right:0;
+	top:0;
+	width:1px;
+	height:100%;
+	background-color: #252423;
+	z-index: 2;
+}
+
+#frame-bottom
+{
+	position: fixed;
+	left:0;
+	bottom:0;
+	width:100%;
+	height:1px;
+	background-color: #252423;
+	z-index: 2;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <link href="./styles.css" rel="stylesheet">
+  <title>Hello World!</title>
+</head>
+
+<body>
+  <div id="body">
+    <div id="titlebar">
+      <img src="./images/icon.svg" style="width: 15px; height:15px;" id="titlebar-icon" />
+      Azure DevOps
+    </div>
+
+    <div id="frame">
+      <webview id="frame-inner"  src="https://aex.dev.azure.com/me" preload="./webview.js" webpreferences="nativeWindowOpen=true" allowpopups></webview>
+    </div>
+
+    <div id="frame-left"></div>
+    <div id="frame-right"></div>
+    <div id="frame-bottom"></div>
+
+    <div id="titlebar-buttons-frame">
+      <div class="titlebar-buttons minimum"></div>
+      <div class="titlebar-buttons maximum"></div>
+      <div class="titlebar-buttons close"></div>
+    </div>
+
+  </div>
+
+  <script src="./renderer.js"></script>
+</body>
+
+</html>

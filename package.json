@@ -1,0 +1,14 @@
+{
+  "name": "azure-devops-client-electron",
+  "version": "0.0.1",
+  "description": "Azure Devops Simple Client",
+  "main": "main.js",
+  "scripts": { "start": "electron . --trace-warnings" }, 
+  "repository": "https://github.com/taegyunko/azure-devops-client-electron",
+  "keywords": [ "Electron", "Azure", "Devops", "client" ],
+  "author": "KO, TAEGYUN <dev@settlers.id>",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^15.1.1"
+  }
+}
